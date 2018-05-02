@@ -20,6 +20,15 @@ Ques .2) There will be no effect on value if print a,*b,**c, then value will be 
 variable name                address                 content
 ================================================================
 c                           0xFF4012                   0xFF4004
-*c                          0xFF4012                   0xFF4004
+*c                          0xFF4004                   0xFF4000
 **c                         0xFF4012                   12
 
+Ques .3) 
+#include<stdio.h>
+int main(){
+  int arr[100];
+  for(int i=0;i<100;i++){
+    arr[i]=-1;
+  }
+return 0;
+}
