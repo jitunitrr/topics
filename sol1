@@ -32,3 +32,25 @@ int main(){
   }
 return 0;
 }
+Quest .4)
+
+int a=12;
+	&a=5;
+Left side of equal assignment should be any operand or variable that could be assigned but but we can't perform "=" at address
+this will show error : "lvalue required as left operand of assignment"
+Quest. 5)
+
+int a=12;
+	int *a_ptr;
+	*a_ptr=a;
+  
+  This will give Segmentation Fault error.Since *a_ptr is a pointer type and hold address so assigning directly any value as lvalue is not valid 
+  but we can do this in another way like this
+  
+  int a=12;
+  int *a_ptr=&a;
+  then assign value
+  *a_ptr=10;
+  
+  this is fine because a_ptr point to a address and at that address the we can use *a_ptr as lvalue 
+  
