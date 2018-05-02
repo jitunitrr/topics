@@ -1,0 +1,15 @@
+Table
+================================================================
+variable name                address                 content
+================================================================
+a                           0xFF4000                   12
+*b                          0xFF4004                   0xFF4000
+**c                         0xFF4012                   0xFF4004
+
+Our base address is 0xFF4000 so if create first varible name "a" then address location assigned to variable is 0xFF4000 because interger 
+variable take 4 byte,
+if we define pointer "*b" to int then next location would be 0xFF4000+4(integer size) = 0xFF4004 and the content will be address of variable 
+a 
+**c it's double pointer it store the address of pointer variable,so if the pointer take 8 bytes then next address will be 
+0xFF4004+8 = 0xFF4012
+
