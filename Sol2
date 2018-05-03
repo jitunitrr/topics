@@ -1,1 +1,14 @@
 
+
+
+
+
+
+
+Answer 3).
+tetrisBlock * b[10];
+for(int i=0;i<10; i++)
+{ 
+    delay(10); /*ten seconds*/
+    b[i]=(tetrisBlock *)malloc(sizeof(tetrisBlock));
+}
