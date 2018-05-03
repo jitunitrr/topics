@@ -1,9 +1,52 @@
 
+Answer 1:)
+Assuming that the variables local to main begin at address 0xFF4000.
+
+Allow the booleans 1 byte each. Allow the integer 4 bytes.
+Allow all pointers 8 bytes.
+
+============================================================================
+variable names               addresse                             content
+============================================================================
+model_ptr                    0xFF4000
+
+view_ptr                     
+
+control_ptr
+
+viewHasController
+
+controlHasModel
+
+modelHasView
+
+doneModel
+
+doneView
+
+doneController
 
 
 
 
+Answer 2:)
 
+//This is an object struct
+typedef struct inheritance{
+int data;
+}object;
+
+// This is parent struct having object struct inside it as obj_parent
+typedef struct parent{
+    int data_parent;
+    object *obj_parent;
+}
+
+// This is child struct having object struct inside it as obj_parent
+typedef struct child{
+int data_child;
+object *obj_child;
+}
 
 Answer 3).
 tetrisBlock * b[10];
